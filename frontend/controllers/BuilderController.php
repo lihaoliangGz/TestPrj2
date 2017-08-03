@@ -10,6 +10,7 @@
 
 namespace frontend\controllers;
 use yii\web\Controller;
+use frontend\models\BuilderModel;
 /**
  * Description of BuilderController
  *
@@ -23,9 +24,9 @@ class BuilderController extends Controller{
      * @return type
      */
     public function actionFormBuilder(){
+        $model=new BuilderModel();
         
-        
-        return $this->renderPartial('form-builder');
+        return $this->renderPartial('form-builder',['model'=>$model]);
         
     }
 
