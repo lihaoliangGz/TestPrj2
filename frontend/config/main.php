@@ -65,13 +65,13 @@ return [
             ]
         ],
         //界面主题配置
-//        'view' => [
-//            'theme' => [
-//                'pathMap' => ['@frontend/views' => '@frontend/themes/test/views'], //定义了原路径到主题路径的映射表
-//                'baseUrl' => '@web/themes/test', //定义了主题中所引用的资源的基础路径
-//            //这意味着所有@backend/views 中的视图将首先查找 @backend/themes/blog/views目录，如果找到了则将使用该视图文件，而不是原视图。
-//            ]
-//        ],
+        'view' => [
+            'theme' => [
+                'pathMap' => ['@frontend/views' => '@frontend/themes/test/views'], //定义了原路径到主题路径的映射表
+                'baseUrl' => '@web/themes/test', //定义了主题中所引用的资源的基础路径
+            //这意味着所有@backend/views 中的视图将首先查找 @backend/themes/blog/views目录，如果找到了则将使用该视图文件，而不是原视图。
+            ]
+        ],
     ],
     //url美化组件:
 //        'urlManager' =>[

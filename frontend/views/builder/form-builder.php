@@ -11,6 +11,7 @@
 use kartik\widgets\ActiveForm;
 use kartik\builder\Form;
 use yii\helpers\Html;
+
 $form= ActiveForm::begin(['type'=> ActiveForm::TYPE_VERTICAL]);
 echo Form::widget([
     'model'=>$model,
@@ -21,6 +22,7 @@ echo Form::widget([
 ]);
 ActiveForm::end();
 
+echo "<br/><br/><br/><br/><br/><br/>";
 
 
 

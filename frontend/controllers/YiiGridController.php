@@ -11,6 +11,9 @@
 
 namespace frontend\controllers;
 use yii\web\Controller;
+use yii\data\Sort;
+use yii\data\ActiveDataProvider;
+use yii\db\Query;
 /**
  * Description of YiiGridController
  *
@@ -19,11 +22,6 @@ use yii\web\Controller;
 class YiiGridController extends Controller{
     
     public function actionIndex(){
-        $dataProvider=Abc();
-        
-    }
-    
-    private function actionAbc(){
         $sort = new Sort([
             'attributes' => [
                 'code' => [
@@ -44,7 +42,7 @@ class YiiGridController extends Controller{
             'sort' => $sort,
         ]);
         
-        return $dataProvider;
+        return $this->renderPartial('index',['dataProvider'=>$dataProvider,]);
     }
     
 }

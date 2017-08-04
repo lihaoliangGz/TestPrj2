@@ -26,7 +26,7 @@ class BuilderController extends Controller{
     public function actionFormBuilder(){
         $model=new BuilderModel();
         
-        return $this->renderPartial('form-builder',['model'=>$model]);
+        return $this->render('form-builder',['model'=>$model]);
         
     }
 
@@ -34,7 +34,7 @@ class BuilderController extends Controller{
      *  Form Grid Builder	FormGrid.php
      */
     public function actionFormGridBuilder(){
-        return $this->renderPartial('form-grid-builder');
+        return $this->render('form-grid-builder');
     }
     
     
@@ -43,6 +43,6 @@ class BuilderController extends Controller{
      */
     public function actionTabularForm(){
         
-        return $this->renderPartial('tabular-form');
+        return $this->render('tabular-form');
     }
 }
